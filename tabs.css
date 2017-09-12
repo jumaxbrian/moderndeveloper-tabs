@@ -1,5 +1,51 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
 /* Selector #1  */
 div.tabComponent input {}
 
 /* Selector #2  */
 div.tabComponent label {}
+
+/*.tabComponent ul{
+    list-style: none;
+}*/
+
+.tabComponent{
+    padding: 10px;
+}
+
+
+.tabComponent ul li{
+    display: block;
+     
+}
+
+.tabComponent input:checked + label{
+    /*text-decoration: none;*/
+    /*display: block;*/
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.tabComponent div p{
+    padding: 10px;
+}
+
+input#home:not(:checked) ~ .home-div,
+input#home:checked ~ .kitchen-div,
+input#home:checked ~ .furniture-div,
+input#kitchen:not(:checked) ~ .kitchen-div,
+input#kitchen:checked ~ .home-div,  /*if kitchen is checked, disable home and furniture*/
+input#kitchen:checked ~ .furniture-div,
+input#furniture:not(:checked) ~ .furniture-div,
+input#furniture:checked ~ .home-div,
+input#furniture:checked ~ .kitchen-div
+{
+    display: none;
+}
+

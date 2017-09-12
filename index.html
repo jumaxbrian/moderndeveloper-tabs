@@ -13,18 +13,29 @@
 
     <div class="tabComponent">
         <!-- Insert code to create tabbed components here -->
-        <a href="#home"></a>
-        <div class="home">
-            Browse through our list of Home Decor items.
+        <input type="radio" name="tabs" id="home" style="display:none;" checked>
+        <label for="home">Home</label>
+        <input type="radio" name="tabs" id="kitchen" style="display:none;">
+        <label for="kitchen">Kitchen</label>
+        <input type="radio" name="tabs" id="furniture" style="display:none;">
+        <label for="furniture">Furniture</label>
+
+        <div class="home-div">
+            <p>
+                Browse through our list of Home Decor items.
+            </p>
         </div>
-        <a href="#furniture"></a>
-        <div class="furniture">
-            Flash sale on living room and bedroom furniture.
+        <div class="furniture-div">
+            <p>
+                Flash sale on living room and bedroom furniture.
+            </p>
         </div>
-        <a href="#kitchen"></a>
-        <div class="kitchen">
-            Bring out the best of the masterchef in you!!
+        <div class="kitchen-div">
+            <p>
+                Bring out the best of the masterchef in you!!
+            </p>
         </div>
+
     </div>
 
 </body>
