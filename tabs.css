@@ -19,8 +19,8 @@ div.tabComponent label {}
 }
 
 
-.tabComponent ul li{
-    display: block;
+.tabComponent label{
+   transition: background-color 2s;
      
 }
 
