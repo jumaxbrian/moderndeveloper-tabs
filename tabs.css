@@ -36,16 +36,14 @@ div.tabComponent label {}
     padding: 10px;
 }
 
-input#home:not(:checked) ~ .home-div,
-input#home:checked ~ .kitchen-div,
-input#home:checked ~ .furniture-div,
-input#kitchen:not(:checked) ~ .kitchen-div,
-input#kitchen:checked ~ .home-div,  /*if kitchen is checked, disable home and furniture*/
-input#kitchen:checked ~ .furniture-div,
-input#furniture:not(:checked) ~ .furniture-div,
-input#furniture:checked ~ .home-div,
-input#furniture:checked ~ .kitchen-div
-{
+input:not(:checked) ~ .tab-content{
     display: none;
 }
 
+input#home:checked ~ .home-div,
+input#kitchen:checked ~ .kitchen-div,
+input#furniture:checked ~ .furniture-div,
+input#clearance:checked ~ .clearance-div
+{
+    display: block;
+}
